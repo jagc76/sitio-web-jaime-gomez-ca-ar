@@ -1,131 +1,143 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 section[id] {
-    scroll-margin-top: 70px; /* Ajusta este valor según el alto de tu menú */
+  scroll-margin-top: 70px; /* Ajusta este valor según el alto de tu menú */
 }
 
 .skills-section {
-    padding: 60px 20px;
-    background-color: #f4f7f6; /* Un gris muy claro y profesional */
+  padding: 60px 20px;
+  background-color: #f4f7f6; /* Un gris muy claro y profesional */
 }
 
 .section-title {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 40px;
-    font-size: 2rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2rem;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .skill-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .skill-card h3 {
-    color: #3498db; /* Azul tecnológico */
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+  color: #3498db; /* Azul tecnológico */
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .skill-card.highlight {
-    border: 2px solid #3498db;
-    background-color: #ebf5fb;
+  border: 2px solid #3498db;
+  background-color: #ebf5fb;
 }
 
 .skill-card ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .skill-card li {
-    margin-bottom: 10px;
-    color: #555;
-    line-height: 1.4;
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.4;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'open sans';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contenedor{
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+body {
+  font-family: "open sans";
 }
 
-.titulo{
-    color: #642a73;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 /* creamos el Header */
- 
+
 header {
-    width: 100%;
-    height: 600px;
-    /*buscamos un gradients en la pagina 
+  width: 100%;
+  height: 600px;
+  /*buscamos un gradients en la pagina 
     https://uigradients.com/#JShine y copiamos 
     el codigo del color que elijamos*/
-    background: #00b09b;  
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, hsla(82, 56%, 51%, 0.438), hsla(173, 100%, 35%, 0.438)), url(../html/htmlinicio.jpg);  
-    /* Chrome 10-25, Safari 5.1-6 */
-    /*en ambos hsla lo cambiamos a 0.685 o como nos paresca para la transparencia y le agregamos un url y enlazamos la foto de la portada con ../ 
+  background: #0ff0d5;
+  /* fallback for old browsers */
+  background:
+    -webkit-linear-gradient(
+      to left,
+      hsla(82, 85%, 46%, 0.438),
+      hsla(173, 100%, 35%, 0.438)
+    ),
+    url(../html/htmlinicio.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /*en ambos hsla lo cambiamos a 0.685 o como nos paresca para la transparencia y le agregamos un url y enlazamos la foto de la portada con ../ 
     luego copiamos la linea de codigo desde linear-gradient y la pegamos en el background de encima despues de -webkit- */
-    background: linear-gradient(to left, hsla(82, 56%, 51%, 0.438), hsla(173, 100%, 35%, 0.438)), url(../html/htmlinicio.jpg); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+  background:
+    linear-gradient(
+      to left,
+      hsla(76, 92%, 54%, 0.438),
+      hsla(273, 98%, 22%, 0.651)
+    ),
+    url(../html/htmlinicio.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 /*creamos el nav con el text-align hacia la derecha right 
 (inicio. Acerca de. Portafolios. Servicios. Contactos */
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
 }
 /*creamos un nav para elemento a y le ponemos color blanco
 font-weight 300 para que la fuente sea mas ligera, un 
 text-decoration nome para quitar el subrrayado del texto 
 y un margin-right de 10 px para separar uno del otro titulo*/
-nav > a{
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
+nav > a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
 }
 /*creamos un nav para el elemento a:hover solo con text-decoration
 underline para que cuando pasemos el mouse por las letras remarque 
 el subrrayado*/
-nav > a:hover{
-    text-decoration: underline;
+nav > a:hover {
+  text-decoration: underline;
 }
 /*creamos un header con .textos-header con un display(pantalla)
 flex (flexible), un heigt(alto) de 430 px y el width(ancho 
@@ -133,61 +145,61 @@ del 100% con align-items(elementos alineados) center, un
 justify-content(justificar contenido) center y un flex-direction
 column para colocar cada texto h1 y h2 en un reglon debajo del
 otro y un text-align center*/
-header .textos-header{
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 /*creamos un .textos-header h1 y h2*/
-.textos-header h1{
-    font-size: 50px;
-    color: rgb(255, 254, 254);
+.textos-header h1 {
+  font-size: 50px;
+  color: rgb(255, 254, 254);
 }
-.textos-header h2{
-    font-size: 30px;
-    /*se crea el font-weight: 300 para que sea mas ligero*/
-    font-weight: 300;
-    color: rgb(253, 253, 253);
+.textos-header h2 {
+  font-size: 30px;
+  /*se crea el font-weight: 300 para que sea mas ligero*/
+  font-weight: 300;
+  color: rgb(253, 253, 253);
 }
 /*creamos un wave con pasition absolute, con un bottom cero y 
 un width del 100% para que se pase a la parte de abajo, tendra
 el color azul que tenia por defecto para cambiarlo debemos ir 
 al codigo en html y ahi podemos cambiarlo, en este caso se cambio
 a blanco la ola*/
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 /* tomamos el abaut us*/
-main .sobre-nosotros{
-    padding: 30px 0 60px 0;
+main .sobre-nosotros {
+  padding: 30px 0 60px 0;
 }
 /*creamos un .contenedor-sobre-nosotors y en el ponemos un
 display flex y un justify-content(justificar contenido)
 space-evenly que reparte el espacio equitativamente.*/
-.contenedor-sobre-nosotros{
-    display: flex;
-    justify-content: space-evenly;
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
 }
 /*se crean .imagen-about-us y .sobre-nosotros .contenido-textos
 para ponerles un width del 48% y asi distribuir mejor los espacios
 equitativamente.*/
-.imagen-about-us{
-    width: 48%;
+.imagen-about-us {
+  width: 48%;
 }
 
-.sobre-nosotros .contenido-textos{
-    width: 48%;
+.sobre-nosotros .contenido-textos {
+  width: 48%;
 }
 /*se crea un contenido .contenido-textos para colocar en el h3 un 
 margin-bottom de 15 px*/
-.contenido-textos h3{
-    margin-bottom: 15px;
+.contenido-textos h3 {
+  margin-bottom: 15px;
 }
 /*se crea un .contenido-textos h3 para colocar en el span un background 
 (fondo) con el color ##4d0686, color blanco #fff, un border-radius (borde
@@ -195,116 +207,116 @@ circular o un radio) del 50% para que sea redondo y un display(pantalla)
 inline-block (bloque en linea) para que tenga propiedad de bloque, un 
 text-align center para que se centre el contorno que haremos, un width 
 (ancho) de 30px esto afecta a los numeros de el .contenedor-sobre-nosotros*/
-.contenido-textos h3 span{
-    background: #4d0686;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    /*la figura queda ovalada porque no es un cuadrado pero si agregamos un
+.contenido-textos h3 span {
+  background: #4d0686;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  /*la figura queda ovalada porque no es un cuadrado pero si agregamos un
     height de 30px queda cuadrado y la figura en el numero queda circular*/
-    height: 30px;
-    /*agregamos un padding (relleno) de 2px y un box-shadow (caja de sombra
+  height: 30px;
+  /*agregamos un padding (relleno) de 2px y un box-shadow (caja de sombra
     0 0 6px 0 rgba(0, 0, 0, .5) para dar contorno de sombreado*/
-    page-break-after: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    /*se crea un margin-right de 5px para separar los h3, los numeros del 
+  page-break-after: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  /*se crea un margin-right de 5px para separar los h3, los numeros del 
     contenido*/
-    margin-right: 5px;
+  margin-right: 5px;
 }
 /*por ultimo se crea un .contenido-textos p para darle un padding 0px para
 que arriba no tenga ningun padding, 0px tampoco a la derecha, 30px abajo y 15px 
 en la izquierda*/
-.contenido-textos p{
-    padding: 0px 0px 30px 15px;
-    /*para acabar de arreglar el texto se agrega un font-weight 300 y un 
+.contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  /*para acabar de arreglar el texto se agrega un font-weight 300 y un 
     text-align justify, esto justifica el texto*/
-    font-weight: 300;
-    text-align: justify;
+  font-weight: 300;
+  text-align: justify;
 }
 /*Seguimos con Galeria*/
 
-.portafolio{
-    background: #f2f2f2;
+.portafolio {
+  background: #f2f2f2;
 }
 /*creamos la .galeria-port*/
-.galeria-port{
-    /*desplegamos y flexiona la galeria*/
-    display: flex;
-    /*justifica contenido en espacios uniforme*/
-    justify-content: space-evenly;
-    /*envoltura flexible flexible*/
-    flex-wrap: wrap;
+.galeria-port {
+  /*desplegamos y flexiona la galeria*/
+  display: flex;
+  /*justifica contenido en espacios uniforme*/
+  justify-content: space-evenly;
+  /*envoltura flexible flexible*/
+  flex-wrap: wrap;
 }
 
-.imagen-port{
-    width: 24%;
-    /*margen del fondo*/
-    margin-bottom: 10px;
-    /*se puede borrar el height porque en hover-galeria me 
+.imagen-port {
+  width: 24%;
+  /*margen del fondo*/
+  margin-bottom: 10px;
+  /*se puede borrar el height porque en hover-galeria me 
     da el estilo que necesito*/
-    /*height: 180px;*/
-    /*desbordamiento oculto*/
-    overflow: hidden;
-    /*posición relativa*/
-    position: relative;
-    /*cursor puntero*/
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  /*height: 180px;*/
+  /*desbordamiento oculto*/
+  overflow: hidden;
+  /*posición relativa*/
+  position: relative;
+  /*cursor puntero*/
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 
-.imagen-port > img{
-    width: 100%;
-    height: 100%;
-    /*ajuste del objeto, cover=cubrir*/
-    object-fit: cover;
-    /*desplegar en bloque*/
-    display: block;
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  /*ajuste del objeto, cover=cubrir*/
+  object-fit: cover;
+  /*desplegar en bloque*/
+  display: block;
 }
 /*creamos .hover-galeria*/
-.hover-galeria{
-    position: absolute;
-    /*anchura*/
-    width: 100%;
-    /*altura*/
-    height: 100%;
-    /*parte superior*/
-    top: 0;
-    /*transformar escala (0)*/
-    transform: scale(0);
-    background: hsla(273, 91%, 27%, 0.7);
-    /*transición*/
-    transition: transform .5s;
-    display: flex;
-    /*justificar contenido centrar galeria*/
-    justify-content: center;
-    /*alinea los articulos al centro*/
-    align-items: center;
-    /*dirección de flexion columna*/
-    flex-direction: column;
+.hover-galeria {
+  position: absolute;
+  /*anchura*/
+  width: 100%;
+  /*altura*/
+  height: 100%;
+  /*parte superior*/
+  top: 0;
+  /*transformar escala (0)*/
+  transform: scale(0);
+  background: hsla(273, 91%, 27%, 0.7);
+  /*transición*/
+  transition: transform 0.5s;
+  display: flex;
+  /*justificar contenido centrar galeria*/
+  justify-content: center;
+  /*alinea los articulos al centro*/
+  align-items: center;
+  /*dirección de flexion columna*/
+  flex-direction: column;
 }
-.hover-galeria img{
-    width: 50px;
+.hover-galeria img {
+  width: 50px;
 }
 .hover-galeria p {
-    color: #fff;
-    padding: 15px; /* Espacio para que el texto no toque los bordes */
-    text-align: center;
-    font-size: 13px; /* Tamaño ideal para lectura en cuadros pequeños */
-    line-height: 1.5; /* Espaciado entre líneas profesional */
-    width: 100%;
-    box-sizing: border-box; /* Crucial para que el padding no agrande el cuadro */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80%; /* Deja espacio para el icono del dedo arriba */
+  color: #fff;
+  padding: 15px; /* Espacio para que el texto no toque los bordes */
+  text-align: center;
+  font-size: 13px; /* Tamaño ideal para lectura en cuadros pequeños */
+  line-height: 1.5; /* Espaciado entre líneas profesional */
+  width: 100%;
+  box-sizing: border-box; /* Crucial para que el padding no agrande el cuadro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%; /* Deja espacio para el icono del dedo arriba */
 }
 
 .hover-galeria strong {
-    font-size: 15px;
-    margin-bottom: 8px;
-    color: #ffde59; /* Un color que resalte el título (opcional) */
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #ffde59; /* Un color que resalte el título (opcional) */
 }
 /*cuando .imagen-port tenga un hover, .hover-galeria  
 tranforma la escala a cero osea desaparece el dedo 
@@ -313,279 +325,280 @@ el scale o escala de cero a 1 y le damos visibilidad
 a a transform scale cero en .hover-galeria, despues de 
 top, sera al contrario al poner el cursor encima de la
 imagen aparece el dedo señalando*/
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
 }
 
 /* sigue Clientes*/
 
-.cards{
-    display: flex;
-    justify-content: space-evenly;
+.cards {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.cards .card{
-    background: #4d0686;
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+.cards .card {
+  background: #4d0686;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    /*ajuste del objeto: cubrir*/
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
+.cards .card img {
+  width: 100px;
+  height: 100px;
+  /*ajuste del objeto: cubrir*/
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
 }
 
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
+.cards .card > .contenido-texto-card {
+  width: 60%;
+  color: #fff;
 }
 
-.cards .card > .contenido-texto-card p{
-    /*peso de la fuente*/
-    font-weight: 300;
-    /*acolchado superior, para espaciado y se vea mas 
+.cards .card > .contenido-texto-card p {
+  /*peso de la fuente*/
+  font-weight: 300;
+  /*acolchado superior, para espaciado y se vea mas 
     claro en el texto*/
-    padding-top: 5px;
-    text-align: justify;
+  padding-top: 5px;
+  text-align: justify;
 }
 /* Our team (nuestro equipo)*/
 
-.about-services{
-    background: #f2f2f2;
-    /*para que se vea mas grande de abajo*/
-    padding-bottom: 30px;
+.about-services {
+  background: #f2f2f2;
+  /*para que se vea mas grande de abajo*/
+  padding-bottom: 30px;
 }
 /*todo queda agrupado*/
-.servicio-cont{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.servicio-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*ahora aparecen los 3 pero en desorden*/
-.servicio-ind{
-    width: 28%;
-    text-align: center;
+.servicio-ind {
+  width: 28%;
+  text-align: center;
 }
 /*para ordenar el contenido .servicio-ind para img debe llevar n width
 y .servicio-ind para h3 colocar un margen arriba y abajo de 10px y cero
 a los lados*/
-.servicio-ind img{
-    width: 90%;
+.servicio-ind img {
+  width: 90%;
 }
 
-.servicio-ind h3{
-    margin: 10px 0;
+.servicio-ind h3 {
+  margin: 10px 0;
 }
 
-.servicio-ind p{
-    font-weight: 300;
-    text-align: justify;
+.servicio-ind p {
+  font-weight: 300;
+  text-align: justify;
 }
 
 /*footer(pie de pagina)*/
 
-footer{
-    background: #414141;
-    /*relleno arriba, derecha, abajo, izquierda*/
-    padding: 60px 0 30px 0;
-    /*para centrar todo*/
-    margin: auto;
-    /*nada salga de el osea no se rompa la background*/
-    overflow: hidden;
+footer {
+  background: #414141;
+  /*relleno arriba, derecha, abajo, izquierda*/
+  padding: 60px 0 30px 0;
+  /*para centrar todo*/
+  margin: auto;
+  /*nada salga de el osea no se rompa la background*/
+  overflow: hidden;
 }
 
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    /*para que se repartan los elementos*/
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-/*para centrar contenido del texto*/
-.content-foo{
-    text-align: center;
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap; /* Esto permite que en celulares se pongan uno debajo de otro */
 }
 
-.content-foo h4{
-    color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.content-foo {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio extra para cuando se apilen en móvil */
 }
 
-.content-foo h4{
-    color: #ccc;
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #af70ff;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.titulo-final{
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
+.content-foo p {
+  color: #ccc;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
 }
 
 /* Estilo especial para el botón de CV */
 .btn-cv {
-    background: #642a73; /* Tu color púrpura */
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: 600 !important;
-    transition: all 0.3s ease;
-    border: 1px solid #fff;
+  background: #642a73; /* Tu color púrpura */
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
 }
 
 .btn-cv:hover {
-    background: #fff;
-    color: #642a73 !important;
-    text-decoration: none !important;
+  background: #fff;
+  color: #642a73 !important;
+  text-decoration: none !important;
 }
 
 /*responsive adaptable a moviles*/
 /*usamos @media screen*/
-@media screen and (max-width:900px){
-    header{
-        background-position: center;
-    }
-    .contenedor-sobre-nosotros{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .sobre-nosotros .contenido-textos{
-        width: 90%;
-    }
+@media screen and (max-width: 900px) {
+  header {
+    background-position: center;
+  }
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .imagen-about-us{
-        width: 90%;
-    }
+  .sobre-nosotros .contenido-textos {
+    width: 90%;
+  }
 
-    /* Galeria */
-    .imagen-port{
-        width: 44%;
-    }
+  .imagen-about-us {
+    width: 90%;
+  }
 
-    /*Clientes*/
-    .cards{
-        /*ordena en columna*/
-        flex-direction: column;
-        justify-content: center;
-        /*centra la columna*/
-        align-items: center;
-    }
+  /* Galeria */
+  .imagen-port {
+    width: 44%;
+  }
 
-    .cards .card{
-        width: 90%;
-    }
-    /*con esto le damos espacio entre bloques*/
-    .cards .card:first-child{
-        margin-bottom: 30px;
-    }
+  /*Clientes*/
+  .cards {
+    /*ordena en columna*/
+    flex-direction: column;
+    justify-content: center;
+    /*centra la columna*/
+    align-items: center;
+  }
 
-    /*servicios*/
+  .cards .card {
+    width: 90%;
+  }
+  /*con esto le damos espacio entre bloques*/
+  .cards .card:first-child {
+    margin-bottom: 30px;
+  }
 
-    .servicio-cont{
-        justify-content: center;
-        flex-direction: column;
-    }
+  /*servicios*/
 
-    .servicio-ind{
-        width: 100%;
-        text-align: center;
-    }
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-        margin-bottom: 60px;
-    }
+  .servicio-ind {
+    width: 100%;
+    text-align: center;
+  }
 
-    .servicio-ind img{
-        width: 90%;
-    }
+  .servicio-ind:nth-child(1),
+  .servicio-ind:nth-child(2) {
+    margin-bottom: 60px;
+  }
+
+  .servicio-ind img {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width:500px){
-    nav{
-        text-align: center;
-        padding: 30px 0 0 0;
-    }
+@media screen and (max-width: 500px) {
+  nav {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
 
-    nav > a{
-        margin-right: 5px;
-    }
+  nav > a {
+    margin-right: 5px;
+  }
 
-    .textos-header h1{
-        font-size: 35px;
-    }
+  .textos-header h1 {
+    font-size: 35px;
+  }
 
-    .textos-header h2{
-        font-size: 20px;
-    }
+  .textos-header h2 {
+    font-size: 20px;
+  }
 
-    /* About us */
-    .imagen-about-us{
-        margin-bottom: 60px;
-        width: 99%;
-    }
+  /* About us */
+  .imagen-about-us {
+    margin-bottom: 60px;
+    width: 99%;
+  }
 
-    .sobre-nosotros .contenido-textos{
-        width: 95%;
-    }
+  .sobre-nosotros .contenido-textos {
+    width: 95%;
+  }
 
-    /*Galeria*/
-    .imagen-port{
-        width: 95%;
-    }
+  /*Galeria*/
+  .imagen-port {
+    width: 95%;
+  }
 
-    /*Clientes*/
+  /*Clientes*/
 
-    .cards .card{
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .cards .card {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .cards .card img{
-        width: 90px;
-        height: 90px;
-    }
+  .cards .card img {
+    width: 90px;
+    height: 90px;
+  }
 
-    /*Footer*/
+  /*Footer*/
 
-    .contenedor-footer{
-        flex-direction: column;
-        border: none;
-    }
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
+  }
 
-    .content-foo{
-        margin-bottom: 20px;
-        text-align: center;
-    }
+  .content-foo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-    .content-foo h4{
-        border: none;
-    }
+  .content-foo h4 {
+    border: none;
+  }
 
-    .content-foo p{
-        color: #ccc;
-        border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
-    }
+  .content-foo p {
+    color: #ccc;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+  }
 
-    .titulo-final{
-        font-size: 20px;
-    }
+  .titulo-final {
+    font-size: 20px;
+  }
 }
-
