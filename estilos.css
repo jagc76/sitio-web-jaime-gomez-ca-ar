@@ -1,3 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 70px; /* Ajusta este valor según el alto de tu menú */
+}
+
+.skills-section {
+    padding: 60px 20px;
+    background-color: #f4f7f6; /* Un gris muy claro y profesional */
+}
+
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #3498db; /* Azul tecnológico */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-card.highlight {
+    border: 2px solid #3498db;
+    background-color: #ebf5fb;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.4;
+}
 *{
     margin: 0;
     padding: 0;
@@ -225,8 +287,24 @@ en la izquierda*/
 .hover-galeria img{
     width: 50px;
 }
-.hover-galeria p{
+.hover-galeria p {
     color: #fff;
+    padding: 15px; /* Espacio para que el texto no toque los bordes */
+    text-align: center;
+    font-size: 13px; /* Tamaño ideal para lectura en cuadros pequeños */
+    line-height: 1.5; /* Espaciado entre líneas profesional */
+    width: 100%;
+    box-sizing: border-box; /* Crucial para que el padding no agrande el cuadro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%; /* Deja espacio para el icono del dedo arriba */
+}
+
+.hover-galeria strong {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #ffde59; /* Un color que resalte el título (opcional) */
 }
 /*cuando .imagen-port tenga un hover, .hover-galeria  
 tranforma la escala a cero osea desaparece el dedo 
