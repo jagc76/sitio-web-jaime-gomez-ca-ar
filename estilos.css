@@ -357,6 +357,23 @@ footer{
     margin: 20px 0 0 0;
     color: #9e9797;
 }
+
+/* Estilo especial para el botón de CV */
+.btn-cv {
+    background: #642a73; /* Tu color púrpura */
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.btn-cv:hover {
+    background: #fff;
+    color: #642a73 !important;
+    text-decoration: none !important;
+}
+
 /*responsive adaptable a moviles*/
 /*usamos @media screen*/
 @media screen and (max-width:900px){
